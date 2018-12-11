@@ -22,12 +22,12 @@ while flag == True:
     n = 0
     for tag in soup.find_all("a"):
         if tag.string == 'Next':
-            #print(tag.get('href'))
             url = tag.get('href')
             n = 1
 
     for tag in soup.find_all("p"):
-        print(tag.string)
+        if tag.string != None:
+            print(tag.string)
         
     if n == 0:
         flag = False
