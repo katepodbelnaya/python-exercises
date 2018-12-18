@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 url = 'http://www.washingtonpost.com/wp-dyn/content/article/2010/08/29/AR2010082902749.html?noredirect=on'
 flag = True
 
-while flag == True:
+while flag:
     
     r = requests.get(url)
     r_html = r.text
