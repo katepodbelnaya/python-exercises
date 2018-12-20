@@ -12,3 +12,8 @@ title = soup.find_all("h2")
 
 for tag in soup.find_all("h2"):
     print(tag.string)
+
+#Writing to the file
+#with open('nytimes_titles.txt', 'w') as open_file:
+#    for tag in soup.find_all("h2"):
+#        open_file.write("{}\n".format(tag.string))
