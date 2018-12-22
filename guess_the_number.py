@@ -32,12 +32,12 @@ while True:
     elif user_num < 1 or user_num > 100:
         print("Out of range! Try again!")
     elif len(guesses) == 2:
-        if number - user_num <=10:
+        if abs (number - user_num) <=10:
             print("WARM!")
         else:
             print("COLD!")
     else:
-        if guesses[-2] - user_num <=10:
+        if abs (guesses[-2] - number) > abs (user_num - number):
             print("WARMER!")
         else:
             print("COLDER!")
