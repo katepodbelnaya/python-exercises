@@ -15,7 +15,6 @@ def mySqrt(x):
         elif mid**2 < x:
             left = mid + 1
         else:
-            mid_last = mid
             right = mid - 1
 
     # End Condition: left > right
